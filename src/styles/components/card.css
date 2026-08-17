@@ -1,0 +1,120 @@
+/* ==========================================================================
+   CARD
+   ========================================================================== */
+
+.card {
+    position: relative;
+    background: var(--color-surface-container-lowest);
+    border: 1px solid var(--border-color-subtle);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-level-1);
+    transition:
+        transform var(--transition-base),
+        box-shadow var(--transition-base),
+        border-color var(--transition-base);
+}
+
+/* Hover */
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+}
+
+/* Active */
+
+.card:active {
+    transform: translateY(-1px);
+}
+
+/* Focus */
+
+.card:focus,
+.card:focus-visible {
+    outline: none;
+    border-color: var(--color-primary-container);
+    box-shadow: var(--shadow-card-hover), 0 0 0 3px rgba(0, 48, 89, 0.12);
+}
+
+/* Interactive Card */
+
+.card-interactive {
+    cursor: pointer;
+}
+
+/* Elevated */
+
+.card-elevated {
+    box-shadow: var(--shadow-level-2);
+}
+
+/* Flat */
+
+.card-flat {
+    box-shadow: none;
+}
+
+/* Dark Section Card */
+
+.card-on-primary {
+    background: var(--color-primary-container);
+    color: var(--color-on-primary);
+    border-color: transparent;
+}
+
+.card-on-primary h1,
+.card-on-primary h2,
+.card-on-primary h3,
+.card-on-primary h4,
+.card-on-primary h5,
+.card-on-primary h6 {
+    color: var(--color-on-primary);
+}
+
+/* Header */
+
+.card-header {
+    margin-bottom: var(--space-stack-sm);
+}
+
+/* Body */
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Footer */
+
+.card-footer {
+    margin-top: var(--space-stack-md);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Compact */
+
+.card-sm {
+    padding: 1.5rem;
+}
+
+/* Large */
+
+.card-lg {
+    padding: 3rem;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card-lg {
+        padding: 2rem;
+    }
+}

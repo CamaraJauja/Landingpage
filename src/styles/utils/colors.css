@@ -1,0 +1,206 @@
+/* ==========================================================================
+   BACKGROUND COLORS
+   ========================================================================== */
+
+.bg-transparent { background-color: transparent; }
+.bg-white       { background-color: var(--color-white); }
+.bg-background  { background-color: var(--color-background); }
+
+.bg-primary     { background-color: var(--color-primary); }
+.bg-secondary   { background-color: var(--color-secondary); }
+
+.bg-gray        { background-color: var(--color-gray); }
+.bg-dark        { background-color: var(--color-dark); }
+
+.bg-info        { background-color: var(--color-info); }
+.bg-success     { background-color: var(--color-success); }
+.bg-warning     { background-color: var(--color-warning); }
+.bg-danger      { background-color: var(--color-danger); }
+
+
+/* ==========================================================================
+   BACKGROUND COLORS - TRANSPARENT
+   ========================================================================== */
+
+.bg-primary-20   { background-color: var(--color-primary-20); }
+.bg-secondary-20 { background-color: var(--color-secondary-20); }
+
+.bg-gray-20      { background-color: var(--color-gray-20); }
+.bg-dark-20      { background-color: var(--color-dark-20); }
+
+.bg-info-20      { background-color: var(--color-info-20); }
+.bg-success-20   { background-color: var(--color-success-20); }
+.bg-warning-20   { background-color: var(--color-warning-20); }
+.bg-danger-20    { background-color: var(--color-danger-20); }
+
+
+/* ==========================================================================
+   BACKGROUND - SPECIAL
+   ========================================================================== */
+
+.bg-hero {
+    background: linear-gradient(
+        rgba(0, 48, 89, 0.47) 10%,
+        var(--color-primary) 100%
+    );
+}
+
+
+/* ==========================================================================
+   HOVER BACKGROUND COLORS
+   ========================================================================== */
+
+.hover-bg-primary:hover   { background-color: var(--color-primary); }
+.hover-bg-secondary:hover { background-color: var(--color-secondary); }
+
+.hover-bg-gray:hover      { background-color: var(--color-gray); }
+.hover-bg-dark:hover      { background-color: var(--color-dark); }
+
+.hover-bg-info:hover      { background-color: var(--color-info); }
+.hover-bg-success:hover   { background-color: var(--color-success); }
+.hover-bg-warning:hover   { background-color: var(--color-warning); }
+.hover-bg-danger:hover    { background-color: var(--color-danger); }
+
+.hover-bg-primary-20:hover   { background-color: var(--color-primary-20); }
+.hover-bg-secondary-20:hover { background-color: var(--color-secondary-20); }
+
+.hover-bg-gray-20:hover      { background-color: var(--color-gray-20); }
+.hover-bg-dark-20:hover      { background-color: var(--color-dark-20); }
+
+.hover-bg-info-20:hover      { background-color: var(--color-info-20); }
+.hover-bg-success-20:hover   { background-color: var(--color-success-20); }
+.hover-bg-warning-20:hover   { background-color: var(--color-warning-20); }
+.hover-bg-danger-20:hover    { background-color: var(--color-danger-20); }
+
+
+/* ==========================================================================
+   BORDER COLORS
+   ========================================================================== */
+
+.border-transparent { border-color: transparent; }
+.border-current     { border-color: currentColor; }
+
+.border-primary     { border-color: var(--color-primary); }
+.border-secondary   { border-color: var(--color-secondary); }
+
+.border-gray        { border-color: var(--color-gray); }
+.border-dark        { border-color: var(--color-dark); }
+.border-border      { border-color: var(--color-border); }
+
+.border-info        { border-color: var(--color-info); }
+.border-success     { border-color: var(--color-success); }
+.border-warning     { border-color: var(--color-warning); }
+.border-danger      { border-color: var(--color-danger); }
+
+
+/* ==========================================================================
+   BORDER COLORS - TRANSPARENT
+   ========================================================================== */
+
+.border-primary-20   { border-color: var(--color-primary-20); }
+.border-secondary-20 { border-color: var(--color-secondary-20); }
+
+.border-gray-20      { border-color: var(--color-gray-20); }
+.border-dark-20      { border-color: var(--color-dark-20); }
+
+.border-info-20      { border-color: var(--color-info-20); }
+.border-success-20   { border-color: var(--color-success-20); }
+.border-warning-20   { border-color: var(--color-warning-20); }
+.border-danger-20    { border-color: var(--color-danger-20); }
+
+/* ==========================================================================
+     OUTLINE
+     ========================================================================== */
+
+.outline-none { outline: none;}
+.outline { outline: 1px solid var(--color-outline);}
+.outline-primary { outline: 2px solid var(--color-primary-container);}
+.outline-error { outline: 2px solid var(--color-error);}
+
+/* ==========================================================================
+     SHADOWS
+     ========================================================================== */
+
+.shadow-none {
+    box-shadow: none;
+}
+
+.shadow-sm {
+    box-shadow: var(--shadow-level-1);
+}
+
+.shadow {
+    box-shadow: var(--shadow-level-1);
+}
+
+.shadow-lg {
+    box-shadow: var(--shadow-level-2);
+}
+
+.shadow-hover {
+    box-shadow: var(--shadow-card-hover);
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-25 {
+    opacity: 0.25;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-75 {
+    opacity: 0.75;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.blur-sm {
+    backdrop-filter: blur(4px);
+}
+
+.blur {
+    backdrop-filter: blur(8px);
+}
+
+.blur-lg {
+    backdrop-filter: blur(16px);
+}
+
+.surface {
+    background: var(--color-surface);
+    color: var(--color-on-surface);
+}
+
+.surface-elevated {
+    background: var(--color-surface-container-lowest);
+    box-shadow: var(--shadow-level-1);
+}
+
+.surface-premium {
+    background: var(--color-primary-container);
+    color: var(--color-on-primary);
+}
+
+.surface-muted {
+    background: var(--color-surface-container);
+}
+
+.state-hover:hover {
+    background-color: rgba(0, 48, 89, 0.06);
+}
+
+.state-active:active {
+    background-color: rgba(0, 48, 89, 0.12);
+}
+
+.state-focus:focus-visible {
+    outline: 2px solid var(--color-primary-container);
+    outline-offset: 2px;
+}

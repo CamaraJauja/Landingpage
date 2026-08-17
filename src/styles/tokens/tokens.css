@@ -1,0 +1,117 @@
+:root {
+    /* =========================
+        COLORS
+        ========================= */
+
+    --color-primary: #003059;
+    --color-secondary: #f8b53b;
+
+    /* Base */
+    --color-background: #f5f5f5;
+    --color-white: #ffffff;
+    --color-gray: #888888;
+    --color-dark: #181818;
+    --color-border: #d1d1d1;
+
+    /* States */
+    --color-info: #2563eb;
+    --color-success: #16a34a;
+    --color-warning: #f8b53b;
+    --color-danger: #dc2626;
+
+    /* Transparency */
+    --color-primary-20: rgba(0, 48, 89, 0.2);
+    --color-secondary-20: rgba(248, 181, 59, 0.2);
+    --color-gray-20: rgba(136, 136, 136, 0.2);
+    --color-dark-20: rgba(24, 24, 24, 0.2);
+    --color-info-20: rgba(37, 99, 235, 0.2);
+    --color-success-20: rgba(22, 163, 74, 0.2);
+    --color-warning-20: rgba(248, 181, 59, 0.2);
+    --color-danger-20: rgba(220, 38, 38, 0.2);
+
+    /* =========================
+        TYPOGRAPHY
+        ========================= */
+
+    --font-family-base: var(--font-base);
+
+    /* Display */
+    --font-size-xs: 0.75rem;   /* 12px */
+    --font-size-sm: 0.875rem;  /* 14px */
+    --font-size-md: 1rem;      /* 16px */
+    --font-size-lg: 1.125rem;  /* 18px */
+    --font-size-xl: 1.25rem;   /* 20px */
+    --font-size-2xl: 1.5rem;   /* 24px */
+    --font-size-3xl: 2rem;     /* 32px */
+    --font-size-4xl: 2.5rem;   /* 40px */
+    --font-size-5xl: 3rem;     /* 48px */
+    --font-size-6xl: 3.5rem;   /* 56px */
+
+    /* =========================
+        SPACING
+        ========================= */
+
+    --space-2xs: 4px;
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 32px;
+    --space-lg: 64px;
+    --space-xl: 96px;
+    --space-2xl: 124px;
+
+    /* =========================
+        RADIUS
+        ========================= */
+
+    --radius-sm: 0.25rem;
+    --radius: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-full: 9999px;
+
+    /* =========================
+        SHADOWS
+        ========================= */
+
+    --shadow-level-1: 0 4px 20px rgba(0, 48, 89, 0.05);
+
+    --shadow-level-2: 0 8px 30px rgba(0, 48, 89, 0.08);
+
+    --shadow-header: 0 4px 20px rgba(0, 48, 89, 0.05);
+
+    --shadow-card-hover: 0 10px 30px rgba(0, 48, 89, 0.08);
+
+    /* =========================
+        GRID
+        ========================= */
+
+    --grid-columns: 12;
+
+    /* =========================
+        BORDERS
+        ========================= */
+
+    --border-width: 1px;
+
+    --border-color-subtle: #f5f5f5;
+    --border-color-input: rgba(136, 136, 136, 0.4);
+    --border-color-focus: #003059;
+
+    /* =========================
+        TRANSITIONS
+        ========================= */
+
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+    --transition-slow: 350ms ease;
+
+    /* =========================
+        Z-INDEX
+        ========================= */
+
+    --z-header: 1000;
+    --z-dropdown: 1100;
+    --z-modal: 1200;
+    --z-toast: 1300;
+}

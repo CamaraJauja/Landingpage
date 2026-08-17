@@ -1,0 +1,57 @@
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.w-dvw { width: 100dvw; }
+.h-dvh { height: 100dvh; }
+.w-fit { width: fit-content; }
+.h-fit { height: fit-content; }
+.w { width: var(--w); min-width: var(--mnw); max-width: var(--mxw); }
+.h { height: var(--h); min-height: var(--mnh); max-height: var(--mxh); }
+.square { width: var(--sq); min-width: var(--sq); height: var(--sq); }
+
+@media (min-width: 768px) {
+    .md\:w-full { width: 100%; }
+    .md\:h-full { height: 100%; }
+    .md\:w-dvw { width: 100dvw; }
+    .md\:h-dvh { height: 100dvh; }
+    .md\:w-fit { width: fit-content; }
+    .md\:h-fit { height: fit-content; }
+    .md\:w { width: var(--w-md); min-width: var(--mnw-md); max-width: var(--mxw-md); }
+    .md\:h { height: var(--h-md); min-height: var(--mnh-md); max-height: var(--mxh-md); }
+    .md\:square { width: var(--sq-md); min-width: var(--sq-md); height: var(--sq-md); }
+}
+
+@media (min-width: 1024px) {
+    .lg\:w-full { width: 100%; }
+    .lg\:h-full { height: 100%; }
+    .lg\:w-dvw { width: 100dvw; }
+    .lg\:h-dvh { height: 100dvh; }
+    .lg\:w-fit { width: fit-content; }
+    .lg\:h-fit { height: fit-content; }
+    .lg\:w { width: var(--w-lg); min-width: var(--mnw-lg); max-width: var(--mxw-lg); }
+    .lg\:h { height: var(--h-lg); min-height: var(--mnh-lg); max-height: var(--mxh-lg); }
+    .lg\:square { width: var(--sq-lg); min-width: var(--sq-lg); height: var(--sq-lg); }
+}
+
+@media (min-width: 1440px) {
+    .xl\:w-full { width: 100%; }
+    .xl\:h-full { height: 100%; }
+    .xl\:w-dvw { width: 100dvw; }
+    .xl\:h-dvh { height: 100dvh; }
+    .xl\:w-fit { width: fit-content; }
+    .xl\:h-fit { height: fit-content; }
+    .xl\:w { width: var(--w-xl); min-width: var(--mnw-xl); max-width: var(--mxw-xl); }
+    .xl\:h { height: var(--h-xl); min-height: var(--mnh-xl); max-height: var(--mxh-xl); }
+    .xl\:square { width: var(--sq-xl); min-width: var(--sq-xl); height: var(--sq-xl); }
+}
+
+@media (min-width: 2560px) {
+    .xxl\:w-full { width: 100%; }
+    .xxl\:h-full { height: 100%; }
+    .xxl\:w-dvw { width: 100dvw; }
+    .xxl\:h-dvh { height: 100dvh; }
+    .xxl\:w-fit { width: fit-content; }
+    .xxl\:h-fit { height: fit-content; }
+    .xxl\:w { width: var(--w-xxl); min-width: var(--mnw-xxl); max-width: var(--mxw-xxl); }
+    .xxl\:h { height: var(--h-xxl); min-height: var(--mnh-xxl); max-height: var(--mxh-xxl); }
+    .xxl\:square { width: var(--sq-xxl); min-width: var(--sq-xxl); height: var(--sq-xxl); }
+}

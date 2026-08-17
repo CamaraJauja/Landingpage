@@ -1,0 +1,266 @@
+/* ==========================================================================
+   BUTTON TOKENS
+   ========================================================================== */
+
+:root {
+    --btn-font-family: var(--font-family-base);
+    --btn-font-size: var(--font-label-lg-size);
+    --btn-font-weight: 700;
+    --btn-line-height: 1;
+
+    --btn-height: 48px;
+    --btn-height-sm: 40px;
+    --btn-height-lg: 56px;
+
+    --btn-padding-x: 1.5rem;
+    --btn-padding-x-sm: 1rem;
+    --btn-padding-x-lg: 2rem;
+
+    --btn-gap: 0.625rem;
+    --btn-radius: var(--radius-full);
+    --btn-border-width: 1px;
+
+    --btn-transition: var(--transition-fast);
+    --btn-shadow-hover: var(--shadow-card-hover);
+
+    /* Primary / Accent */
+    --btn-primary-bg: var(--color-secondary);
+    --btn-primary-border: var(--color-secondary);
+
+    --btn-primary-hover-bg: #f7aa1d;
+    --btn-primary-hover-border: #f7aa1d;
+
+    /* Secondary */
+    --btn-secondary-bg: transparent;
+    --btn-secondary-color: var(--color-primary-container);
+    --btn-secondary-border: var(--color-primary-container);
+    --btn-secondary-hover-bg: rgba(0, 48, 89, 0.06);
+    --btn-secondary-active-bg: rgba(0, 48, 89, 0.12);
+
+    /* Ghost */
+    --btn-ghost-bg: transparent;
+    --btn-ghost-color: var(--color-primary-container);
+    --btn-ghost-hover-bg: rgba(0, 48, 89, 0.06);
+    --btn-ghost-active-bg: rgba(0, 48, 89, 0.12);
+
+    /* Dark / Brand BG */
+    --btn-bg-bg: var(--color-primary-bg);
+    --btn-bg-color: var(--color-on-primary);
+    --btn-bg-border: var(--color-primary-bg);
+    --btn-bg-hover-bg: var(--color-primary);
+    --btn-bg-hover-color: var(--color-on-primary);
+
+    /* Soft */
+    --btn-soft-bg: var(--color-white);
+    --btn-soft-color: var(--color-primary);
+    --btn-soft-border: var(--color-white);
+    --btn-soft-hover-bg: #e9e8e8;
+
+    /* Focus */
+    --btn-focus-outline: 2px solid var(--color-primary-container);
+    --btn-focus-offset: 3px;
+
+    /* Disabled */
+    --btn-disabled-opacity: 0.5;
+}
+
+
+/* ==========================================================================
+   BUTTON BASE
+   ========================================================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--btn-gap);
+
+    min-height: var(--btn-height);
+    padding-inline: var(--btn-padding-x);
+
+    border: var(--btn-border-width) solid transparent;
+    border-radius: var(--btn-radius);
+
+    font-family: var(--btn-font-family);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    line-height: var(--btn-line-height);
+
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition:
+        transform var(--btn-transition),
+        background-color var(--btn-transition),
+        border-color var(--btn-transition),
+        color var(--btn-transition),
+        box-shadow var(--btn-transition),
+        opacity var(--btn-transition);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn:focus-visible {
+    outline: var(--btn-focus-outline);
+    outline-offset: var(--btn-focus-offset);
+}
+
+
+/* ==========================================================================
+   VARIANTS
+   ========================================================================== */
+
+.btn-primary {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-color);
+    border-color: var(--btn-primary-border);
+}
+
+.btn-primary:hover {
+    background: var(--btn-primary-hover-bg);
+    color: var(--btn-primary-hover-color);
+    border-color: var(--btn-primary-hover-border);
+    box-shadow: var(--btn-shadow-hover);
+}
+
+.btn-secondary {
+    background: var(--btn-secondary-bg);
+    color: var(--btn-secondary-color);
+    border-color: var(--btn-secondary-border);
+}
+
+.btn-secondary:hover {
+    background: var(--btn-secondary-hover-bg);
+}
+
+.btn-secondary:active {
+    background: var(--btn-secondary-active-bg);
+}
+
+.btn-ghost {
+    background: var(--btn-ghost-bg);
+    color: var(--btn-ghost-color);
+    border-color: transparent;
+}
+
+.btn-ghost:hover {
+    background: var(--btn-ghost-hover-bg);
+}
+
+.btn-ghost:active {
+    background: var(--btn-ghost-active-bg);
+}
+
+.btn-bg {
+    background: var(--btn-bg-bg);
+    color: var(--btn-bg-color);
+    border-color: var(--btn-bg-border);
+}
+
+.btn-bg:hover {
+    background: var(--btn-bg-hover-bg);
+    color: var(--btn-bg-hover-color);
+    box-shadow: var(--btn-shadow-hover);
+}
+
+.btn-soft {
+    background: var(--btn-soft-bg);
+    color: var(--btn-soft-color);
+    border-color: var(--btn-soft-border);
+}
+
+.btn-soft:hover {
+    background: var(--btn-soft-hover-bg);
+}
+
+
+/* ==========================================================================
+   LINK BUTTON
+   ========================================================================== */
+
+.btn-link {
+    min-height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+
+    background: transparent;
+    color: var(--color-primary-container);
+}
+
+.btn-link:hover {
+    color: var(--color-primary);
+    transform: none;
+}
+
+.btn-link:active {
+    opacity: 0.8;
+}
+
+
+/* ==========================================================================
+   ICON BUTTON
+   ========================================================================== */
+
+.btn-icon {
+    width: var(--btn-height);
+    height: var(--btn-height);
+    min-height: var(--btn-height);
+    padding: 0;
+
+    border-radius: var(--btn-radius);
+
+    color: var(--color-primary-container);
+    background: transparent;
+}
+
+.btn-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-icon:hover {
+    background: var(--btn-ghost-hover-bg);
+}
+
+.btn-icon:active {
+    background: var(--btn-ghost-active-bg);
+    transform: scale(0.96);
+}
+
+
+/* ==========================================================================
+   SIZES
+   ========================================================================== */
+
+.btn-sm {
+    min-height: var(--btn-height-sm);
+    padding-inline: var(--btn-padding-x-sm);
+    font-size: 13px;
+}
+
+.btn-lg {
+    min-height: var(--btn-height-lg);
+    padding-inline: var(--btn-padding-x-lg);
+}
+
+
+/* ==========================================================================
+   STATES
+   ========================================================================== */
+
+.btn:disabled,
+.btn[disabled],
+.btn.is-disabled {
+    opacity: var(--btn-disabled-opacity);
+    cursor: not-allowed;
+    pointer-events: none;
+}

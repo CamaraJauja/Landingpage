@@ -1,0 +1,186 @@
+/* ===== TEXT ALIGN ===== */
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* ===== FONT FAMILY ===== */
+
+.font-base { font-family: var(--font-family-base); }
+.font-heading { font-family: var(--font-family-heading); }
+
+/* ===== FONT SIZE ===== */
+
+.text-xs { font-size: 0.75rem; }   /* 12px */
+.text-sm { font-size: 0.875rem; }  /* 14px */
+.text-md { font-size: 1rem; }      /* 16px */
+.text-lg { font-size: 1.125rem; }  /* 18px */
+.text-xl { font-size: 1.25rem; }   /* 20px */
+.text-2xl { font-size: 1.5rem; }   /* 24px */
+.text-3xl { font-size: 2rem; }     /* 32px */
+.text-4xl { font-size: 2.5rem; }   /* 40px */
+.text-5xl { font-size: 3rem; }     /* 48px */
+.text-6xl { font-size: 3.5rem; }   /* 56px */
+
+/* ===== FONT WEIGHT ===== */
+
+.font-thin { font-weight: 100; }
+.font-extralight { font-weight: 200; }
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+
+/* ===== LINE HEIGHT ===== */
+
+.leading-none { line-height: 1; }
+.leading-tight { line-height: 1.2; }
+.leading-snug { line-height: 1.4; }
+.leading-normal { line-height: 1.5; }
+.leading-relaxed { line-height: 1.6; }
+.leading-loose { line-height: 1.8; }
+
+/* ===== LETTER SPACING ===== */
+
+.tracking-tighter { letter-spacing: -0.04em; }
+.tracking-tight { letter-spacing: -0.02em; }
+.tracking-normal { letter-spacing: 0; }
+.tracking-wide { letter-spacing: 0.03em; }
+.tracking-wider { letter-spacing: 0.05em; }
+.tracking-widest { letter-spacing: 0.1em; }
+
+/* ===== TEXT TRANSFORM ===== */
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.normal-case { text-transform: none; }
+.italic { font-style: italic; }
+
+/* ===== TEXT DECORATION ===== */
+
+.underline { text-decoration: underline; }
+.no-underline { text-decoration: none; }
+.line-through { text-decoration: line-through; }
+.overline { text-decoration: overline; }
+
+/* ===== TEXT WRAP ===== */
+
+.text-wrap { text-wrap: wrap; }
+.text-nowrap { white-space: nowrap; }
+.text-balance { text-wrap: balance; }
+.break-words { overflow-wrap: break-word; }
+.break-all { word-break: break-all; }
+
+/* ===== TEXT TRUNCATE ===== */
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ===== TEXT COLORS ===== */
+
+/* ==========================================================================
+   TEXT COLORS
+   ========================================================================== */
+
+.text-primary   { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+
+.text-info      { color: var(--color-info); }
+.text-success   { color: var(--color-success); }
+.text-warning   { color: var(--color-warning); }
+.text-danger    { color: var(--color-danger); }
+
+.text-dark      { color: var(--color-dark); }
+.text-gray      { color: var(--color-gray); }
+
+.text-muted     { color: var(--color-gray); }
+
+.text-white     { color: var(--color-white); }
+
+.text-transparent { color: transparent; }
+.text-current     { color: currentColor; }
+
+
+/* ==========================================================================
+   TEXT COLORS - TRANSPARENT
+   ========================================================================== */
+
+.text-primary-20   { color: var(--color-primary-20); }
+.text-secondary-20 { color: var(--color-secondary-20); }
+
+.text-gray-20      { color: var(--color-gray-20); }
+.text-dark-20      { color: var(--color-dark-20); }
+
+.text-info-20      { color: var(--color-info-20); }
+.text-success-20   { color: var(--color-success-20); }
+.text-warning-20   { color: var(--color-warning-20); }
+.text-danger-20    { color: var(--color-danger-20); }
+
+/* ===== TEXT OPACITY ===== */
+
+.text-opacity-25 { opacity: 0.25; }
+.text-opacity-50 { opacity: 0.5; }
+.text-opacity-75 { opacity: 0.75; }
+.text-opacity-100 { opacity: 1; }
+
+/* ===== BREAK POINTS ===== */
+
+@media (min-width: 768px) {
+    .md\:text-xs {font-size: 12px; }
+    .md\:text-sm {font-size: 14px; }
+    .md\:text-md {font-size: 16px; }
+    .md\:text-lg {font-size: 18px; }
+    .md\:text-xl {font-size: 20px; }
+    .md\:text-2xl {font-size: 24px; }
+    .md\:text-3xl {font-size: 32px; }
+    .md\:text-4xl {font-size: 40px; }
+    .md\:text-5xl {font-size: 48px; }
+    .md\:text-6xl { font-size: 56px; }
+}
+
+@media (min-width: 1024px) {
+    .lg\:text-xs {font-size: 12px; }
+    .lg\:text-sm {font-size: 14px; }
+    .lg\:text-md {font-size: 16px; }
+    .lg\:text-lg {font-size: 18px; }
+    .lg\:text-xl {font-size: 20px; }
+    .lg\:text-2xl {font-size: 24px; }
+    .lg\:text-3xl {font-size: 32px; }
+    .lg\:text-4xl {font-size: 40px; }
+    .lg\:text-5xl {font-size: 48px; }
+    .lg\:text-6xl { font-size: 56px; }
+}
+
+@media (min-width: 1440px) {
+    .xl\:text-xs {font-size: 12px; }
+    .xl\:text-sm {font-size: 14px; }
+    .xl\:text-md {font-size: 16px; }
+    .xl\:text-lg {font-size: 18px; }
+    .xl\:text-xl {font-size: 20px; }
+    .xl\:text-2xl {font-size: 24px; }
+    .xl\:text-3xl {font-size: 32px; }
+    .xl\:text-4xl {font-size: 40px; }
+    .xl\:text-5xl {font-size: 48px; }
+    .xl\:text-6xl { font-size: 56px; }
+}
+
+@media (min-width: 2560px) {
+    .xxl\:text-xs {font-size: 12px; }
+    .xxl\:text-sm {font-size: 14px; }
+    .xxl\:text-md {font-size: 16px; }
+    .xxl\:text-lg {font-size: 18px; }
+    .xxl\:text-xl {font-size: 20px; }
+    .xxl\:text-2xl {font-size: 24px; }
+    .xxl\:text-3xl {font-size: 32px; }
+    .xxl\:text-4xl {font-size: 40px; }
+    .xxl\:text-5xl {font-size: 48px; }
+    .xxl\:text-6xl { font-size: 56px; }
+}

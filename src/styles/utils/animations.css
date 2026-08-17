@@ -1,0 +1,9 @@
+.transition-none { transition: none; }
+.transition { transition: all var(--transition-base); }
+.transition-fast { transition: all var(--transition-fast); }
+.transition-slow { transition: all var(--transition-slow); }
+
+.elevated:hover {
+    transform: translateY(-8px);
+    transition: all var(--transition-base);
+}

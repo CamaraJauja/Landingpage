@@ -1,11 +1,22 @@
+'use client';
+
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
+import Community from "@/components/sections/Community";
+import Contact from "@/components/sections/Contact";
+import Events from "@/components/sections/Events";
+import Executives from "@/components/sections/Executives";
 import CardBenefits from "@/components/ui/CardBenefits";
 import { page } from "@/db/page";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage () {
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    }
+
     return (
         <>
             <Header/>
@@ -18,7 +29,7 @@ export default function HomePage () {
                             <p className="text-white">{page.hero.subtext}</p>
                             <div className="flex gap-md flex-col lg:flex-row">
                                 <Link href={'/'} className="btn btn-primary">Hazte socio</Link>
-                                <Link href={'/'} className="btn btn-soft">Conoce nuestros servicios</Link>
+                                <Link href={'/#benefits'} className="btn btn-soft">Conoce nuestros beneficios</Link>
                             </div>
                         </div>
                     </div>
@@ -48,64 +59,11 @@ export default function HomePage () {
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-xl" id="events">
+                <Community/>
+                <Events/>
+                <section className="w-full py-xl" id="about">
                     <div className="w m-auto flex flex-col gap-md" style={{"--w": "90%"}}>
-                        <div className="text-center">
-                            <h2 className="text-2xl lg:text-4xl">{page.events.title}</h2>
-                            <p className="text-muted">{page.events.subtext}</p>
-                        </div>
-                        <ul className="w-full flex items-center gap-sm scroll-x">
-                            <button className={`filter active`}>Todos</button>
-                            {page.events.categories.map((category, idx) => (
-                                <button key={idx} className={`filter`}>{category}</button>
-                            ))}
-                        </ul>
-                        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
-                            {page.events.items.map((item) => (
-                                <article key={item.id} className="w-full bg-white rounded-md border-thin shadow" style={{overflow: "hidden"}}>
-                                    <div className="relative w-full h bg-background" style={{"--h": "180px"}}>
-                                        <span className="absolute inline-flex bg-primary text-white p-xs rounded-sm" style={{top: "10px", left: "10px"}}>{item.category}</span>
-                                    </div>
-                                    <div className="w-full flex flex-col gap-sm p-sm">
-                                        <div className="w-full flex items-center justify-between">
-                                            <p>{item.date}</p>
-                                            <p>{item.hours}</p>
-                                        </div>
-                                        <h3 className="text-lg lg:text-xl">{item.title}</h3>
-                                        <p className="text-xs text-muted">{item.content}</p>
-                                        <div className="w-full flex gap-sm">
-                                            <button className="btn btn-primary">Inscribirme</button>
-                                            <button className="btn btn-secondary">Detalles</button>
-                                        </div>
-                                    </div>
-                                </article>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-                <section className="w-full py-xl bg-white" id="about">
-                    <div className="w m-auto flex flex-col gap-md" style={{"--w": "90%"}}>
-                        <div className="w-full flex flex-col gap-md">
-                            <div className="text-center">
-                                <h2 className="text-2xl lg:text-4xl">{page.about.executives.title}</h2>
-                                <p className="text-muted">{page.about.executives.subtext}</p>
-                            </div>
-                            <div className="w-full flex gap-md scroll-x">
-                                {page.about.executives.items.map((item) => (
-                                    <article key={item.id} className="w-full bg-white rounded-md border-thin">
-                                        <div className="w-full">
-                                            <img src="/directivos.png" />
-                                        </div>
-                                        <div className="p-sm flex flex-col gap-sm">
-                                            <p className="text-secondary uppercase font-medium">{item.post}</p>
-                                            <h3 className="text-primary text-2xl lg:text-3xl">{item.name}</h3>
-                                            <p className="text-sm text-muted">{item.about}</p>
-                                            <Link href={'/'} className="btn btn-primary">Ver perfil completo</Link>
-                                        </div>
-                                    </article>
-                                ))}
-                            </div>
-                        </div>
+                        <Executives/>
                         <div className="w-full flex flex-col gap-md border-thin p-md bg-background rounded-md">
                             <div className="text-center">
                                 <h2 className="text-2xl lg:text-4xl">{page.about.directions.title}</h2>
@@ -127,7 +85,26 @@ export default function HomePage () {
                         </div>
                     </div>
                 </section>
+                <section className="w-full py-xl bg-white">
+                    <div className="w m-auto flex flex-col gap-md" style={{"--w": "90%"}}>
+                        <div className="text-center">
+                            <p>{page.complaints.eyebrow}</p>
+                            <h2 className="text-2xl lg:text-4xl">{page.complaints.title}</h2>
+                            <p className="text-muted">{page.complaints.subtext}</p>
+                        </div>
+                    </div>
+                </section>
+                <section className="w-full py-xl">
+                    <div className="w m-auto flex flex-col gap-md" style={{"--w": "90%"}}>
+                        <div className="text-center">
+                            <h2 className="text-2xl lg:text-4xl">{page.validator.title}</h2>
+                            <p className="text-muted">{page.validator.subtext}</p>
+                        </div>
+                    </div>
+                </section>
+                <Contact/>
             </main>
+            <Footer/>
         </>
     )
 }

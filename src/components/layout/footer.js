@@ -6,7 +6,7 @@ export default function Footer () {
     const year = new Date().getFullYear();
 
     return (
-        <footer className="w-full bg-primary-container text-white">
+        <footer className="w-full bg-primary py-lg text-white">
             <div className="w m-auto flex justify-between" style={{"--w": "90%"}}>
                 <div></div>
                 <div className="flex flex-col gap-4 lg:flex-row">

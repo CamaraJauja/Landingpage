@@ -40,12 +40,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Selection */
-::selection {
-    background: var(--color-primary-container);
-    color: var(--color-on-primary);
-}
-
 /* Focus */
 :focus {
     outline: none;
@@ -208,8 +202,8 @@ iframe {
 }
 
 img {
-    height: auto;
     border-style: none;
+    object-fit: cover;
 }
 
 svg {

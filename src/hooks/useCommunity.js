@@ -1,5 +1,5 @@
 import { getCommunityAll } from "@/services/community.service";
-import { useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 
 export const useCommunity = () => {
 
@@ -16,6 +16,14 @@ export const useCommunity = () => {
             setLoading(false);
         }
     }
+
+    useEffect(() => {
+        const load = async () => {
+            if (community.length > 0) return;
+            getCommunitys();
+        }
+        load();
+    }, [])
 
     return {
         data: community,

@@ -1,7 +1,13 @@
+import { IconUser } from "@tabler/icons-react";
+
 const message_whatsapp = `Hola deseo más información para asociarme en la *Cámara de Comercio de Jauja*.`
 
 export const page = {
     navs: [
+        {
+            url: '/#about',
+            txt: 'Nosotros'
+        },
         {
             url: '/#benefits',
             txt: 'Beneficios'
@@ -9,10 +15,6 @@ export const page = {
         {
             url: '/#events',
             txt: 'Eventos'
-        },
-        {
-            url: '/#about',
-            txt: 'Nosotros'
         },
         {
             url: '/#contact',
@@ -50,32 +52,32 @@ export const page = {
         subtext: 'Conecta, aprende, representa y haz crecer tu empresa.',
         items: [
             {
-                icon: '',
+                icon: <IconUser/>,
                 title: 'Representación empresarial',
                 content: 'Impulsamos los intereses del sector privado ante entidades públicas y privadas.'
             },
             {
-                icon: '',
+                icon: <IconUser/>,
                 title: 'Capacitación',
                 content: 'Accede a formación práctica para fortalecer tu empresa y equipo.'
             },
             {
-                icon: '',
+                icon: <IconUser/>,
                 title: 'Networking',
                 content: 'Conecta con empresarios y genera nuevas oportunidades.'
             },
             {
-                icon: '',
+                icon: <IconUser/>,
                 title: 'Promoción empresarial',
                 content: 'Damos visibilidad a tu empresa, productos y servicios.'
             },
             {
-                icon: '',
+                icon: <IconUser/>,
                 title: 'Ruedas de negocio',
                 content: 'Participa en espacios para generar nuevos contactos comerciales.'
             },
             {
-                icon: '',
+                icon: <IconUser/>,
                 title: 'Convenios y beneficios',
                 content: 'Accede a oportunidades y beneficios mediante nuestras alianzas.'
             }

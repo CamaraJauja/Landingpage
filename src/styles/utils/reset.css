@@ -28,7 +28,7 @@ html {
 body {
     min-height: 100vh;
     max-width: 100dvw;
-    overflow: auto;
+    overflow-x: hidden;
     background: var(--color-background);
     color: var(--color-on-background);
     font-family: var(--font-family-base);
@@ -203,7 +203,7 @@ iframe {
 
 img {
     border-style: none;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 svg {

@@ -7,6 +7,7 @@
 .bg-background  { background-color: var(--color-background); }
 
 .bg-primary     { background-color: var(--color-primary); }
+.bg-primary-dark { background-color: var(--color-primary-dark); }
 .bg-secondary   { background-color: var(--color-secondary); }
 
 .bg-gray        { background-color: var(--color-gray); }

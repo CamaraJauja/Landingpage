@@ -1,4 +1,5 @@
 import { Montserrat } from "next/font/google";
+import GeorgiaFont from "next/font/local";
 import '@/styles/global.css';
 import { Provider } from "@/providers";
 
@@ -7,6 +8,11 @@ const montserrat = Montserrat({
     subsets: ["latin"],
     weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
 })
+
+const georgia = GeorgiaFont({
+    src: '../styles/fonts/Georgia Italic.ttf',
+    variable: '--font-georgia',
+});
 
 export const metadata = {
     metadataBase: new URL('https://camaradejauja.org.pe'),
@@ -68,7 +74,7 @@ export const metadata = {
         description: 'Representamos, capacitamos y conectamos a empresarios, emprendedores e instituciones para construir una provincia más competitiva y próspera.',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/og-image.png',
                 width: 1200,
                 height: 630,
                 alt: 'Cámara de Comercio de Jauja',
@@ -79,13 +85,10 @@ export const metadata = {
         card: 'summary_large_image',
         title: 'Cámara de Comercio de Jauja',
         description: 'Impulsamos el desarrollo empresarial de Jauja mediante capacitación, representación institucional y oportunidades de crecimiento.',
-        images: ['/og-image.jpg'],
+        images: ['/og-image.png'],
     },
     verification: {
-        google: 'PON_AQUI_EL_CODIGO_DE_GOOGLE_SEARCH_CONSOLE',
-        // yandex: '',
-        // yahoo: '',
-        // other: {}
+        google: 'l2_kkRXm-g_cU3AnWoEMrC6tAEluE5P4yYaPOpKSsVQ'
     },
     icons: {
         icon: [
@@ -111,18 +114,17 @@ export const metadata = {
         ],
         shortcut: '/favicon.ico',
     },
-    manifest: '/site.webmanifest',
+    manifest: '/manifest.json',
     other: {
-        'theme-color': '#003059',
+        'theme-color': '#001B36',
         'color-scheme': 'light',
-        'apple-mobile-web-app-capable': 'yes',
         'apple-mobile-web-app-status-bar-style': 'default',
     },
 };
 
 export default function RootLayout ({ children }) {
     return (
-        <html lang="es" className={`${montserrat.variable}`}>
+        <html lang="es" className={`${montserrat.variable} ${georgia.variable}`}>
             <body>
                 <Provider>
                     {children}

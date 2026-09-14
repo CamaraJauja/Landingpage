@@ -1,5 +1,5 @@
 import { getEventsAll } from "@/services/events.service";
-import { useState } from "react"
+import { useMemo, useState } from "react"
 
 export const useEvents = () => {
 
@@ -17,10 +17,10 @@ export const useEvents = () => {
         }
     }
 
-    return {
+    return useMemo(() => ({
         data: events,
         loading,
         getEvents
-    }
+    }), [events, loading]);
 
 }

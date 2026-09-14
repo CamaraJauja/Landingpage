@@ -1,5 +1,5 @@
 import { getExecutivesAll } from "@/services/executives.service";
-import { useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 
 export const useExecutives = () => {
 
@@ -16,9 +16,17 @@ export const useExecutives = () => {
             setLoading(false);
         }
     }
+
+    useEffect(() => {
+        const load = async () => {
+            if (executives.length > 0) return;
+            await getExecutives();
+        }
+        load();
+    }, []);
     
     return {
-        data: executives,
+        executives,
         loading,
         getExecutives
     }

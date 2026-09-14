@@ -7,8 +7,8 @@
 
 /* ===== FONT FAMILY ===== */
 
-.font-base { font-family: var(--font-family-base); }
-.font-heading { font-family: var(--font-family-heading); }
+.font-base { font-family: var(--font-base); }
+.font-italic { font-family: var(--font-georgia); }
 
 /* ===== FONT SIZE ===== */
 

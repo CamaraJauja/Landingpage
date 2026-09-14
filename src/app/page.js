@@ -306,7 +306,7 @@ export default function HomePage () {
                     <div className="w m-auto" style={{"--w": "90%"}}>
                         <div className="w m-auto flex flex-col text-center items-center justify-center" style={{"--w": "60%"}}>
                             <p className="text-secondary font-bold uppercase md-sm">Construyamos futuro</p>
-                            <h2 className="text-6xl leading-thing font-medium text-primary">Juntos impulsamos el desarrollo empresarial de <span className="block font-italic">Jauja</span></h2>
+                            <h2 className="text-6xl leading-thing font-medium text-primary">Juntos impulsamos el desarrollo <span className="block">empresarial de <span className="font-italic">Jauja</span></span></h2>
                             <p className="text-gray leading-relaxed mb-md">Sé parte de una comunidad que conecta empresas, genera oportunidades y fortalece nuestro sector privado.</p>
                             <div className="flex gap-sm">
                                 <Link href={'/'} className="btn btn-primary">Hazte socio</Link>

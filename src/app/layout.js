@@ -2,6 +2,7 @@ import { Montserrat } from "next/font/google";
 import GeorgiaFont from "next/font/local";
 import '@/styles/global.css';
 import { Provider } from "@/providers";
+import StructuredData from "@/components/seo/StructuredData";
 
 const montserrat = Montserrat({
     variable: "--font-base",
@@ -126,6 +127,7 @@ export default function RootLayout ({ children }) {
     return (
         <html lang="es" className={`${montserrat.variable} ${georgia.variable}`}>
             <body>
+                <StructuredData/>
                 <Provider>
                     {children}
                 </Provider>
